@@ -6,30 +6,14 @@ class LinkedList<T> {
     Node<T> last;
     int size = 0;
 
+    @SuppressWarnings("hiding")
     private class Node<T> {
         private T value;
         private Node<T> next;
 
-        public Node() {
-            this.next = null;
-        }
-
         public Node(T value) {
             this.value = value;
             this.next = null;
-        }
-
-        public Node(T value, Node<T> next) {
-            this.value = value;
-            this.next = next;
-        }
-
-        public T value() {
-            return value;
-        }
-
-        public Node<T> next() {
-            return next;
         }
     }
 
